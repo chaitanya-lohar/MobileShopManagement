@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Bill for Accessories</title>
+        <style>
+             body{
+            background-image:url(bg2.jpg);
+            background-size:1366px 768px;
+        }
+             h1,td{
+             color:red;
+             background-color:black;
+             font-weight:bold;
+            }
+            table{
+                //opacity:0.8;
+            }
+            .reset,.generate,.print{
+                background-color: black; /* Green */
+               
+                border-radius:8px;
+                color: red;
+                padding: 5px 15px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 15px;
+                border-color:red;
+            }
+            input,select{
+                border-radius:4px;
+                font-weight:bold;
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <center>
+        
+        <hr/>
+        <p align="left"><a href="home.html">Back</a></p>
+        <h1>Bill For Accessories</h1>
+        <hr/>
+        <form method="post" action="invoice2.jsp">
+            <table border="0" cellpadding="10">
+                <tr>
+                    <td>First Name</td>
+                    <td colspan="2"><input type="text" name="a1"></td>
+                </tr>
+                 <tr>
+                    <td>Last Name</td>
+                    <td  colspan="2"><input type="text" name="a2"></td>
+                </tr>
+                 <tr>
+                    <td>Mobile Number</td>
+                    <td  colspan="2"><input type="text" name="a3"></td>
+                </tr>
+                 <tr>
+                    <td>Product Name</td>
+                    <td  colspan="2"><input type="text" name="a4"></td>
+                </tr>
+                 <tr>
+                    <td>Price</td>
+                    <td  colspan="2"><input type="text" name="a5"></td>
+                </tr>
+                 <tr>
+                    <td>Amount Paid</td>
+                    <td  colspan="2"><input type="text" name="a6"></td>
+                </tr>
+                 <tr>
+                     <td>Warranty</td>
+                             <td  colspan="2"><select name="a7">
+                                     <option value="1 year">1 Year</option>
+                                     <option value="2 year">2 Year</option>
+                                     <option value="3 year">3 Year</option>
+                                     <option value="4 year">4 Year</option>
+                                     <option value="5 year">5 Year</option>
+                                 </select></td>
+                </tr>
+                 <tr>
+                     <td align="center"><input type="submit" name="b8" value="Generate Invoice" class="generate"></td>
+                     <td align="center"><input type="button" name="b9" value="Reset" class="reset" onclick="alert('values has been reset..')"></td>
+                     <td align="center"><input type="button" name="b10" value="Print" class="print" onclick="window.print()"></td>
+                    
+                    
+                </tr>
+            </table>
+            
+        </form>
+    </center>
+    </body>
+</html>

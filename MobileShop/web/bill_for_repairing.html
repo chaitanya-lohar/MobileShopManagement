@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Bill for repairing</title>
+        <script type="text/javascript">
+            
+            function resetall(){
+                
+    
+               alert("Values has been reset!");
+               
+                
+            }
+            function printall(){
+                alert("Bill is being printed !");
+                window.print();
+            }
+            
+        </script>
+        <style>
+             body{
+            background-image:url(bg2.jpg);
+            background-size:1366px 768px;
+        }
+             h1,td{
+             color:red;
+             background-color:black;
+             font-weight:bold;
+            }
+            table{
+               // opacity:0.8;
+            }
+            .reset,.generate,.print{
+                background-color: black; /* Green */
+               
+                border-radius:8px;
+                color: red;
+                padding: 5px 15px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 15px;
+                border-color:red;
+            }
+            input,textarea{
+                border-radius:4px;
+                font-weight:bold;
+            }
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <center>
+        <hr/>
+        <p align="left"><a href="home.html">Back</a></p>
+        <h1>Bill For Repairing</h1>
+        <hr/>
+        <form method="post" action="invoice.jsp">
+            <table border="0" cellpadding="10">
+                <tr>
+                    <td>First Name</td>
+                    <td colspan="2"><input type="text" name="b1"></td>
+                </tr>
+                 <tr>
+                    <td>Last Name</td>
+                    <td  colspan="2"><input type="text" name="b2"></td>
+                </tr>
+                 <tr>
+                    <td>Company Name</td>
+                    <td  colspan="2"><input type="text" name="b3"></td>
+                </tr>
+                 <tr>
+                    <td>Model</td>
+                    <td  colspan="2"><input type="text" name="b4"></td>
+                </tr>
+                 <tr>
+                    <td>Charges</td>
+                    <td  colspan="2"><input type="text" name="b5"></td>
+                </tr>
+                <tr>
+                    <td>Amount paid</td>
+                    <td  colspan="2"><input type="text" name="b7"></td>
+                </tr>
+                 <tr>
+                     <td>Issue</td>
+                     <td  colspan="2"><textarea name="b6" cols="30" rows="6" ></textarea>
+                                 </td>
+                </tr>
+                 <tr>
+                     <td align="center"><a href="invoice.jsp"><input type="submit" name="b7" value="Generate Invoice" class="generate"></a></td>
+                     <td align="center"><input type="button" name="b8" value="Reset" class="reset" onclick="resetall()"></td>
+                     <td align="center"><input type="button" name="b9" value="Print" class="print" onclick="printall()"></td>
+                    
+                </tr>
+            </table>
+            
+        </form>
+    </center>
+    </body>
+</html>

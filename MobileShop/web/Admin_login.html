@@ -1,0 +1,60 @@
+
+<html>
+    
+    <head>
+        <title>Admin Login</title>
+        
+        <style>
+            .b1,.b2{
+                background-color: #4CAF50; /* Green */
+                border: none;
+                border-radius:8px;
+                color: white;
+                padding: 8px 15px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 15px;
+            }
+            .table{
+                background-color:#696969;
+                opacity:1.0;border-color:black;
+                border-style:solid;
+                display: inline-block;
+                border-radius:8px;
+                font-size: 15px;
+                 color:white;
+                 font-weight:bold;
+            }
+            input{
+                border-radius:4px;
+            }
+        </style>
+    </head>
+    <body style="background-color:lightblue">
+        
+    <center>
+        <h1>Admin Login</h1>
+        <form method="post" action="Admin_login.jsp">
+        <table cellpadding="5" class="table">
+            <tr>
+                <td>Email Address</td>
+                <td><input type="email" name="email" placeholder="enter email...."></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="pass" placeholder="enter password...."></td>
+            </tr>
+            <tr>
+                <td align="center"><input type="checkbox" name="ch1"></td>
+                <td> Terms & Conditions</td>
+            </tr>
+            <tr>
+                <td align="center"><a href="signup.html"><input type="Button" value="Sign in" name="b1" class="b1"></a></td>
+                <td align="center"><input type="Submit" value="Login" name="b2" class="b2" ></td>
+            </tr>
+        </table>
+        </form>
+    </center> 
+    </body>
+</html>
